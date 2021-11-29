@@ -189,7 +189,7 @@ body{
     position: absolute;
     width: 60%;
     height: .2rem;
-    border-radius: 10px;
+    border-radius: 12px;
     background-color: #2D9CDB;
     right: 0;
     transform: translateY(-50%);
@@ -199,4 +199,24 @@ body{
     line-height: 1.6rem;
     color: #718096;
     font-size: 1.1rem;
+}
+
+.sect{
+    padding-bottom: 2rem;
+}
+
+.timeline{
+    display: grid;
+}
+
+.tl-title{
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    color: #002333;
+    text-transform: uppercase;
+}
+
+.tl-content{
+    border-left: 1px solid #ccc;
+    padding-left: 2rem;
 }
