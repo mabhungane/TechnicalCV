@@ -6,13 +6,21 @@
         <meta name="viewport" content="width-device-width, initial-scale=1.0">
         <title>Curriculum Vitae</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
     <body>
+        
+        <div class="loader_bg">
+            <div class="loader"></div>
+        </div>
         <main class="main-content">
+            
             <section class="left-section">
                 <div class="left-content">
                     <div class="profile">
@@ -25,23 +33,24 @@
                         <ul>
                             <li>
                                 <i class="fa fa-phone"></i>
-                                0781686793
+                                <a href="tel:0781686793" style="text-decoration: none;color: #718096">0781686793</a>
                             </li>
                             <li>
                                 <i class="fa fa-fax"></i>
-                                sibongileradebe@gmail.com
+                                <a href="mailto:sibongileradebe@gmail.com" style="text-decoration: none;color: #718096">sibongileradebe@gmail.com</a>
                             </li>
                             <li>
                                 <i class="fa fa-globe"></i>
-                                www.sibongileradebe.com
+                                <a href="www.sibongileradebe.com" style="text-decoration: none;color: #718096">www.sibongileradebe.com</a>
                             </li>
                             <li>
                                 <i class="fa fa-facebook"></i>
-                                www.facebook.com/sibongile
+                                <a href="www.facebook.com/sibongile" style="text-decoration: none;color: #718096">www.facebook.com/sibongile</a>
                             </li>
                             <li>
                                 <i class="fa fa-instagram"></i>
-                                @sibongile_radebe
+                                <a href="@sibongile_radebe" style="text-decoration: none;color: #718096">@sibongile_radebe</a>
+                                
                             </li>
                             <li>
                                 <i class="fa fa-map-marker"></i>
@@ -223,6 +232,70 @@
                             </div>
                     </div>
                 </section>
+                <section>
+                    <h2 class="right-title">Weather API</h2>
+                    <div class="wrapper">
+                        <header><i class='bx bx-left-arrow-alt'></i>Weather App</header>
+                        <section class="input-part">
+                          <p class="info-txt"></p>
+                          <div class="content">
+                            <input type="text" spellcheck="false" placeholder="Enter city name" required>
+                            <div class="separator"></div>
+                            <button>Get Device Location</button>
+                          </div>
+                        </section>
+                        <section class="weather-part">
+                          <img src="" alt="Weather Icon">
+                          <div class="temp">
+                            <span class="numb">_</span>
+                            <span class="deg">°</span>C
+                          </div>
+                          <div class="weather">_ _</div>
+                          <div class="location">
+                            <i class='bx bx-map'></i>
+                            <span>_, _</span>
+                          </div>
+                          <div class="bottom-details">
+                            <div class="column feels">
+                              <i class='bx bxs-thermometer'></i>
+                              <div class="details">
+                                <div class="temp">
+                                  <span class="numb-2">_</span>
+                                  <span class="deg">°</span>C
+                                </div>
+                                <p>Feels like</p>
+                              </div>
+                            </div>
+                            <div class="column humidity">
+                              <i class='bx bxs-droplet-half'></i>
+                              <div class="details">
+                                <span>_</span>
+                                <p>Humidity</p>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                      </div>
+                </section>
             </main>
-        </body>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 3000);
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+         $('.slider').slider({full_width: true});
+       });
+   </script>
+    <script src="script.js"></script>
+    <div class="button">
+        <a class="btn btn-primary" href="Sibongile Radebe CV.pdf" download>
+        <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+       Download PDF
+      </a>
+      </div>
+</body>
     </html>
